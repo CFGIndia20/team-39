@@ -14,3 +14,8 @@ Email: somaiyamansi@gmail.com
 Shubham Mittal\
 Mobile: 7976685204\
 Email: sm21011999@gmail.com
+
+Ayesha Rashid\
+Mobile: 9174957886\
+Email: ayesharashid011@gmail.com
+
