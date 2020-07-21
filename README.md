@@ -11,6 +11,6 @@ Mansi Somaiya\
 Phone: 7506177417\
 Email: somaiyamansi@gmail.com
 
-Shubham Mittal
-Mobile: 7976685204
+Shubham Mittal\
+Mobile: 7976685204\
 Email: sm21011999@gmail.com
