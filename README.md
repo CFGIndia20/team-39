@@ -19,3 +19,7 @@ Ayesha Rashid\
 Mobile: 9174957886\
 Email: ayesharashid011@gmail.com
 
+Aditya Kumar Singh\
+Mobile: 9398125870\
+Email: adisingh.98@gmail.com
+
