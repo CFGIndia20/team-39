@@ -1,6 +1,5 @@
-from app import db, admin
+from app import db 
 from datetime import datetime
-from flask_admin.contrib.sqla import ModelView
 
 class User(db.Model):
     id = db.Column(db.Integer,primary_key = True)
