@@ -1,8 +1,11 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
 from flask import Flask
 from flask_sqlalchemy import sqlalchemy
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'thisjustrandom'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 from routes import *
 
