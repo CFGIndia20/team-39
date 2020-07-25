@@ -21,13 +21,6 @@ donations = db.Table('donations', db.Model.metadata,
                                       db.Column('unit_id', db.Integer, db.ForeignKey('unit.id')),
                                       db.Column('amount', db.Float, primary_key=True),
                                       db.Column('created_at', db.DateTime, nullable=False, default=datetime.utcnow),
-<<<<<<< HEAD
-
-
-=======
-                                       
-                                      
->>>>>>> 2a4cd9aa798d76f1d4212c7ea4a85af030926fa0
 )
 
 
@@ -90,19 +83,5 @@ class Answer(db.Model):
         created_at to get monthly or yearly data
     '''
     created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-<<<<<<< HEAD
-
-
-
 
 db.create_all()
-=======
-    
-    
-
-
-db.create_all()
-
-
-
->>>>>>> 2a4cd9aa798d76f1d4212c7ea4a85af030926fa0
