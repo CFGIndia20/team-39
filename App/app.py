@@ -3,6 +3,7 @@ from flask_sqlalchemy import sqlalchemy
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'thisjustrandom'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///temp.db'
 
 from routes import *
 
