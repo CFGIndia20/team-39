@@ -5,7 +5,4 @@ Team*.zip
 *.key
 *.ovpn
 <<<<<<< HEAD
-*.env
-=======
 .env
->>>>>>> 051407d293051e3eef66bfa949845802edf57e2d
