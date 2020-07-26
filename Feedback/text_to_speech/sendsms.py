@@ -9,14 +9,23 @@ from twilio.base.exceptions import TwilioRestException
 account_sid = os.getenv('ACCOUNT_SID')
 auth_token = os.getenv('AUTH_TOKEN')
 
+
 client = Client(account_sid, auth_token)
 
-# message = client.messages \
-#                 .create(
-#                      body="whatever the message we want that has been translated using google translate is to be put here",
-#                      from_='+16262624030',
-#                      to='+919893003147'
-#                  )
+verification = client.verify \
+                     .services('VAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX') \
+                     .verifications \
+                     .create(locale='es', to='+15017122661', channel='sms')
+
+print(verification.sid)
+
+
+message = client.messages \
+                .create(
+                     body="whatever the message we want that has been translated using google translate is to be put here",
+                     from_='+16262624030',
+                     to='+919893003147'
+                 )
 
 # print(message.sid)
 
@@ -58,3 +67,4 @@ def answer():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
