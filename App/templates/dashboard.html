@@ -4,7 +4,7 @@
 
 <head>
 
-{% include './includes/head-section.html' %}
+{% include './head-section.html' %}
 
 </head>
 
@@ -12,7 +12,7 @@
 
   <!-- Page Wrapper -->
   <div id="wrapper">
-    {% include './includes/sidebar.html' %}
+    {% include './sidebar.html' %}
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -20,7 +20,7 @@
       <!-- Main Content -->
       <div id="content">
 
-        {% include './includes/navbar.html' %}
+        {% include './navbar.html' %}
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
@@ -271,7 +271,7 @@
                 </div>
                 <div class="card-body">
                   <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="<?= BASEASSETS?>img/undraw_posting_photo.svg" alt="">
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="{{url_for('static', filename='img/undraw_posting_photo.svg')}}" alt="">
                   </div>
                   <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
                   <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
@@ -298,7 +298,7 @@
       </div>
       <!-- End of Main Content -->
 
-      {% include './includes/footer.html' %}
+      {% include './footer.html' %}
 
     </div>
     <!-- End of Content Wrapper -->
@@ -307,20 +307,20 @@
   <!-- End of Page Wrapper -->
 
   <!-- Scroll to Top Button-->
-  {% include './includes/scroll-to-top.html' %}
+  {% include './scroll-to-top.html' %}
 
   <!-- Logout Modal-->
-  <!-- <?php require_once(__DIR__."/../includes/page-level/logout-modal.php");?> -->
+  <!-- <?php require_once(__DIR__."/../page-level/logout-modal.php");?> -->
 
-  {% include './includes/core-scripts.html' %}
+  {% include './core-scripts.html' %}
 
   <!-- Page level plugins -->
-  <script src="./assets/vendor/chart.js/Chart.min.js"></script>
+  <script src="{{ url_for('static', filename='vendor/chart.js/Chart.min.js')}}"></script>
 
   <!-- Page level custom scripts -->
-  <script src="./assets/js/demo/chart-area-demo.js"></script>
-  <script src="./assets/js/demo/chart-pie-demo.js"></script>
-  <script src="./assets/js/pages/index/helper/helperfunctions.js"></script>
+  <script src="{{url_for('static', filename='js/demo/chart-area-demo.js')}}"></script>
+  <script src="{{url_for('static', filename='js/demo/chart-pie-demo.js')}}"></script>
+  
 </body>
 
 </html>
