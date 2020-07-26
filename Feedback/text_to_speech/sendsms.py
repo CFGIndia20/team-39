@@ -1,12 +1,14 @@
 from twilio.rest import Client
+import os
 
 from flask import Flask, request
 from twilio.twiml.voice_response import VoiceResponse
 
 from twilio.base.exceptions import TwilioRestException
 
-account_sid = ''
-auth_token = ''
+account_sid = os.getenv('ACCOUNT_SID')
+auth_token = os.getenv('AUTH_TOKEN')
+
 client = Client(account_sid, auth_token)
 
 # message = client.messages \

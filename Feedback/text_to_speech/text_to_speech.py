@@ -14,7 +14,7 @@ def text_to_speech(filename, fout, lngg):
 if __name__ == "__main__":
     textfile = "text.txt"
     fout = "output.mp3"
-    lang = 'en'
+    lang = 'hi'
     text_to_speech(textfile, fout, lang)
 #to play the file from os perspective
 #os.system("start output.mp3")
